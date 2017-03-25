@@ -1,0 +1,6 @@
+clear all,clc, close all
+Z=@(x,y) exp(x+y*i);
+
+x=0;y=0:0.001:2*pi;
+p=abs(Z+(1/2)*Z.^2)-1;
+contour(y,p)
